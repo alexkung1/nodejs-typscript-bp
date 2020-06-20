@@ -23,7 +23,8 @@
         "typescript": "^3.9.5"
     },
     "scripts": {
-        "start": "nodemon --exec babel-node src/index.ts --extensions '.ts'",
+        "start": "babel-node src/index.ts --extensions '.ts'",
+        "watch": "nodemon --exec babel-node src/index.ts --extensions '.ts'",
         "debug": "nodemon --exec babel-node src/index.ts --extensions '.ts' --inspect-brk=19731",
         "test:debug": "node --inspect-brk=19731 node_modules/.bin/jest",
         "test": "node node_modules/.bin/jest",
